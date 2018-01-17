@@ -7,7 +7,7 @@ logo: "GTN"
 
 class: enlarge120
 
-![condalogo](../../../../../shared/images/conda_logo.png)
+![condalogo](../../../../shared/images/conda_logo.png)
 
 # Package, dependency and environment management
 
@@ -15,7 +15,7 @@ class: enlarge120
 
 class: enlarge120
 
-### .image-25[![](../../../../../shared/images/conda_logo.png)] <br/> Conda Terminology
+### .image-25[![](../../../../shared/images/conda_logo.png)] <br/> Conda Terminology
 
 Conda **recipes** build **packages** that are published to **channels**.
 
@@ -23,7 +23,7 @@ Conda **recipes** build **packages** that are published to **channels**.
 
 class: enlarge120
 
-### .image-25[![](../../../../../shared/images/conda_logo.png)] <br /> Conda Key Features for Galaxy
+### .image-25[![](../../../../shared/images/conda_logo.png)] <br /> Conda Key Features for Galaxy
 
 - No compilation at install time - *binaries* with their dependencies, libraries...
 - Support for all operating systems Galaxy targets
@@ -45,7 +45,7 @@ Compared with the Tool Shed dependency management (`tool_dependencies.xml`), Bio
 
 ---
 
-### .image-25[![](../../../../../shared/images/conda_logo.png)] <br/> Conda Distributions
+### .image-25[![](../../../../shared/images/conda_logo.png)] <br/> Conda Distributions
 
 ```
 
@@ -57,7 +57,7 @@ Compared with the Tool Shed dependency management (`tool_dependencies.xml`), Bio
 
 class: enlarge120
 
-### .image-25[![](../../../../../shared/images/conda_logo.png)] <br/> Best Practice Channels
+### .image-25[![](../../../../shared/images/conda_logo.png)] <br/> Best Practice Channels
 
 - Packages through channels within Continuum.
 - Conda channels searched by Galaxy for packages
@@ -76,7 +76,7 @@ class: enlarge120
 
 class: left, enlarge120
 
-### .image-25[![](../../../../../shared/images/conda_logo.png)] <br/> Install and Configure
+### .image-25[![](../../../../shared/images/conda_logo.png)] <br/> Install and Configure
 
 ```bash
 $ planemo conda_init
@@ -93,7 +93,7 @@ This has already been done on [Planemo machine](https://github.com/galaxyproject
 
 class: enlarge120
 
-### .image-25[![](../../../../../shared/images/conda_logo.png)] <br/> Quickstart
+### .image-25[![](../../../../shared/images/conda_logo.png)] <br/> Quickstart
 #### Using Conda outside Planemo
 
 - Install a package
@@ -169,7 +169,7 @@ only one that will be used by Galaxy by default.
 
 ---
 
-### .image-25[![](../../../../../shared/images/conda_logo.png)] <br/> Writing a Conda Recipe
+### .image-25[![](../../../../shared/images/conda_logo.png)] <br/> Writing a Conda Recipe
 
 If searching best practice channels fails, you may need to build a Conda recipe.
 
@@ -179,7 +179,7 @@ If searching best practice channels fails, you may need to build a Conda recipe.
 
 class: left
 
-### .image-25[![](../../../../../shared/images/conda_logo.png)] <br/> Writing a Conda Recipe - The Files
+### .image-25[![](../../../../shared/images/conda_logo.png)] <br/> Writing a Conda Recipe - The Files
 
 A Conda recipe is defined by a directory, the two most important files in this directory are:
 
@@ -190,7 +190,7 @@ A Conda recipe is defined by a directory, the two most important files in this d
 
 class: left
 
-### .image-25[![](../../../../../shared/images/conda_logo.png)] <br/> Writing a Conda Recipe - `meta.yaml`
+### .image-25[![](../../../../shared/images/conda_logo.png)] <br/> Writing a Conda Recipe - `meta.yaml`
 
 `meta.yaml` contains basic metadata about the recipe.
 
@@ -213,7 +213,7 @@ source:
 
 ---
 
-### .image-25[![](../../../../../shared/images/conda_logo.png)] <br/> Writing a Conda Recipe - `requirements`
+### .image-25[![](../../../../shared/images/conda_logo.png)] <br/> Writing a Conda Recipe - `requirements`
 
 ```yaml
 requirements:
@@ -233,7 +233,7 @@ requirements:
 
 ---
 
-### .image-25[![](../../../../../shared/images/conda_logo.png)] <br/> Writing a Conda Recipe - Preprocessing Selectors
+### .image-25[![](../../../../shared/images/conda_logo.png)] <br/> Writing a Conda Recipe - Preprocessing Selectors
 
 - Evaluated as Python expressions - feel free to use `and`, `or`, etc.
 - Other common selectors include `py2k`, `py3k`.
@@ -257,7 +257,7 @@ build:
 
 class: left
 
-### .image-25[![](../../../../../shared/images/conda_logo.png)] <br/> Writing a Conda Recipe - Tests
+### .image-25[![](../../../../shared/images/conda_logo.png)] <br/> Writing a Conda Recipe - Tests
 
 <br/>
 <br/>
@@ -297,7 +297,7 @@ https://bioconda.github.io/guidelines.html
 
 ---
 
-### .image-25[![](../../../../../shared/images/conda_logo.png)] <br/> Writing a Conda Recipe - `build.sh`
+### .image-25[![](../../../../shared/images/conda_logo.png)] <br/> Writing a Conda Recipe - `build.sh`
 
 ```bash
 #!/bin/bash
@@ -319,7 +319,7 @@ cp *.py $PREFIX/bin
 
 ---
 
-### .image-25[![](../../../../../shared/images/conda_logo.png)] <br/> Writing a Conda Recipe - Skeletons
+### .image-25[![](../../../../shared/images/conda_logo.png)] <br/> Writing a Conda Recipe - Skeletons
 
 - `conda skeleton pypi <packagename>`
 - `conda skeleton cran <packagename>`
@@ -332,7 +332,7 @@ These generate pre-filled recipes <small>(not guaranteed to work out of the box)
 
 ---
 
-### .image-25[![](../../../../../shared/images/conda_logo.png)] <br/> Writing a Conda Recipe - Building
+### .image-25[![](../../../../shared/images/conda_logo.png)] <br/> Writing a Conda Recipe - Building
 
 Once the recipe is ready to go, the `conda build` command can be used to build it.
 
@@ -352,7 +352,7 @@ $ $HOME/miniconda3/bin/conda build .
 
 ---
 
-.image-75[![](../../../../../shared/images/bioconda_logo.png)]
+.image-75[![](../../../../shared/images/bioconda_logo.png)]
 
 
 - A channel dedicated to bioinformatics (and other informatics) packages
@@ -363,7 +363,7 @@ $ $HOME/miniconda3/bin/conda build .
 
 ---
 
-### .image-25[![](../../../../../shared/images/bioconda_logo.png)] <br /> Contributing
+### .image-25[![](../../../../shared/images/bioconda_logo.png)] <br /> Contributing
 
 1. Fork [Bioconda](https://github.com/bioconda/bioconda-recipes/fork).
 1. Clone your fork:
