@@ -262,6 +262,41 @@ material:
       - jmchilton
       - bgruening
       - hmenager
+  -
+    title: "Tool Dependencies and Conda ONLY"
+    type: "tutorial"
+    name: "conda_only"
+    hands_on: "external"
+    hands_on_url: "http://planemo.readthedocs.io/en/latest/writing_standalone.html"
+    slides: yes
+    questions:
+      - "What are Conda and Bioconda?"
+      - "What are Conda recipes and environments?"
+      - "How do I find and use existing Conda recipes?"
+      - "How do I develop Conda recipes for use within Galaxy tools?"
+    objectives:
+      - "Learn to use existing Conda recipes to enable best practice tool dependency management in Galaxy."
+      - "Learn the basics of building Conda recipes and contributing to Bioconda."
+      - "Learn to use Planemo to assist in developing Galaxy tools from existing and new Conda recipes."
+    time_estimation: "1.25h"
+    requirements:
+      -
+        title: "Tool development and integration into Galaxy"
+        type: "internal"
+        link: "/topics/dev/tutorials/tool-integration/slides.html"
+    key_points:
+      - "Conda and Bioconda are Galaxy best practices for connecting Galaxy tools to underlying applications and libraries."
+      - "Leveraging Conda allows easy installation of your tool's dependencies by Galaxy deployers and others."
+      - "The Planemo commands `conda_search`, `conda_init`, `conda_install`, `lint`, `test`, and `serve` make it easy to search and use existing Conda recipes when developing tools."
+      - "Conda recipe skeletons, `conda build`, and with `planemo conda_install --conda_use_local` allow easy development of new Conda recipes at the same time as Galaxy tools that wrap them."
+      - "Bioconda is a Galaxy best practice Conda channel for recipe publication."
+      - "Bioconda has easy to follow contribution guidelines and is very welcoming to new contributors."
+    contributors:
+      - nsoranzo
+      - jmchilton
+      - bgruening
+      - hmenager
+      - slugger70
 
   -
     title: "Tool Dependencies and Containers"
